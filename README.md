@@ -62,3 +62,32 @@ Time-based features such as `Year`, `Day`, `Day_of_week`, and `Quarter` were ext
 ![Box plot](box_plot.png)
 
 From the box plot, we can see the distribution of each feature in comparison to the trend of the stock. From this graph we can see that the Price, Open, High, and Low features share very similar distribution to each of the trend categories. From the Correlation Heatmap, we can analyze the correlation between any 2 of our features to see that Price, Open, HIgh, and Low features share really strong relationship to the year while other features have little to no relationship. 
+
+
+# Model Evaluation and Result Analysis
+
+Evaluating our model led to the following results:
+
+Direction_quarter Evaluation:
+Accuracy: 0.28
+Precision: 0.80
+Recall: 0.28
+F1 Score: 0.13
+Log Loss: 0.7365
+
+Trend_class Evaluation:
+Accuracy: 0.33
+Precision: 0.44
+Recall: 0.33
+F1 Score: 0.30
+Log Loss: 4.4184
+
+
+**Is our model good?**
+Currently the model isn’t performing well on the data.
+	
+**If not, what is a sign we can see from the results**
+The low accuracy (28% for Direction_quarter, 33% for Trend_class) and poor F1 scores (0.13 and 0.30) indicate weak predictive power. Additionally, the high log loss (4.4184 for Trend_class) suggests poor probability calibration. Despite high precision for Direction_quarter (80%), its recall is very low (28%), meaning it fails to identify many positive cases
+
+
+
