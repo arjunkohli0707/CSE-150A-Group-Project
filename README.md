@@ -166,16 +166,7 @@ def evaluate(y_true, y_pred, target_name, probs, state_names):
 
 We started by examining the performance of our first vanilla Bayesian Network model which assumes conditional independence over all features from each other given the targets. It turns out that our first model took too long to evalute on the testing set (more than a 6 hours), so we eventually gave up on this model and went on testing the second model using HillClimbSearch. The second model ran quickly for the evaluation process and produced the following results.
 
-| Metric         | Direction_quarter | Trend_class |
-|:--------------:|:-----------------:|:-----------:|
-| Accuracy       | 0.53              | 0.47        |
-| Precision      | 0.50              | 0.40        |
-| Recall         | 0.53              | 0.47        |
-| F1 Score       | 0.51              | 0.44        |
-| Log Loss       | 0.9413            | 4.3222      |
-
 ## Results Analysis
-
 We started by examining the performance of our first **vanilla Bayesian Network model**, which assumed **conditional independence** between all features given the target variables. However, this model proved **computationally expensive**, requiring more than **six hours** to evaluate on the test set. Due to this inefficiency, we shifted to our **second model**, which was structured using **HillClimbSearch** for network structure learning. This approach **significantly improved computational efficiency**, allowing for faster evaluation. The results of the second model are as follows:
 
 | Metric         | Direction_quarter | Trend_class |
