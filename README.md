@@ -57,3 +57,8 @@ Time-based features such as `Year`, `Day`, `Day_of_week`, and `Quarter` were ext
 - The numerical data were categorized into time-based features such as `Year`, `Day`, `Day_of_week`, and `Quarter`.  
 - This was done by creating bins for year and day using quantile-based discretization.
 
+## Data Exploration
+![Correlation Heatmap](correlation_heatmap.png)
+![Box plot](box_plot.png)
+
+From the box plot, we can see the distribution of each feature in comparison to the trend of the stock. From this graph we can see that the Price, Open, High, and Low features share very similar distribution to each of the trend categories. From the Correlation Heatmap, we can analyze the correlation between any 2 of our features to see that Price, Open, HIgh, and Low features share really strong relationship to the year while other features have little to no relationship. 
