@@ -154,7 +154,7 @@ model.emissionprob_ = np.ones((n_states, n_observations)) / n_observations
 Feature binning in traditional HMMs can lead to **information loss**. For example, if stock prices are categorized into bins at 100 dollars, then a small difference (e.g., 99.9 vs. 100.1) places values in separate bins despite their similarity. This discretization can obscure fine-grained trends. To address this, we use Gaussian Hidden Markov Models (Gaussian HMMs), an extension of the HMM framework that models continuous observations using multivariate Gaussian distributions. This approach is well-suited for stock market data, where features like price and volume are inherently continuous and exhibit nuanced trends.
 
 For a hidden state $z_t$, the emission probability of observation $x_t$ (a vector of features) follows a multivariate normal distribution:  
-$$P(x_t | z_t) = \mathcal{N}(x_t; \boldsymbol{\mu}_{z_t}, \boldsymbol{\Sigma}_{z_t})$$
+$$P(x_t | z_t) = \mathcal{N}(x_t; \boldsymbol{\mu_{z_t}}, \boldsymbol{\Sigma}_{z_t})$$
 where:  
 - $\boldsymbol{\mu}_{z_t}$: Mean vector of state $z_t$.  
 - $\boldsymbol{\Sigma}_{z_t}$: Covariance matrix of state $z_t$.
